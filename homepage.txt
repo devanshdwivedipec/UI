@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:mini_project/datasource.dart';
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    var worldwidepanels;
+    return Scaffold(
+      appBar: AppBar(
+       centerTitle: false,
+      title: Text('Covid 19 APP'),
+    ),
+body: SingleChildScrollView(child :Column(
+  children: <Widget>[
+    Container(
+      height: 100,
+      alignment: Alignment.center,
+      padding: EdgeInsets.all(10),
+      color: Colors.orange[100],
+
+      child: Text(DataSource.quote,style: TextStyle(color: Colors.blueAccent,fontWeight:FontWeight.bold,fontStyle: FontStyle.italic,fontSize: 30 ),),
+    ),
+    Text('worldwide'),
+    worldwidepanels()
+  ],
+)),
+    );
+
+  }
+}
+//homepage 

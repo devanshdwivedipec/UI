@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class DataSource {
+  static String quote = "fucked up";
+
+  static Map<String, String> questionAnswers={
+    "question" : "what is a coronavirus ?",
+     "answer" :
+     "Online exam ka sahara",
+
+  };
+
+
+}
+// data source

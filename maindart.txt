@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+import 'package:mini_project/homepage.dart';
+
+void main() {
+  runApp(MaterialApp(
+
+    debugShowCheckedModeBanner: false, //for not showing debug water mark
+    theme: ThemeData(
+      fontFamily: 'CircularNotchedRectangle',
+      primaryColor: Colors.amberAccent
+    ),
+    home: HomePage() ,
+  ));
+}
+
+     // main dart 
